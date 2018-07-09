@@ -211,17 +211,9 @@ ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 		if (!serverQueue) return msg.channel.send('There is nothing playing.');
 
 		return msg.channel.send(`
-
 __**Song queue:**__
-
-
-
 ${serverQueue.songs.map(song => `**-** ${song.title}`).join('\n')}
-
-
-
 **Now playing:** ${serverQueue.songs[0].title}
-
 		`);
 
 	} else if (command === `pu`) {
